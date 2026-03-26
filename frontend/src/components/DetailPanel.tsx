@@ -92,7 +92,7 @@ export default function DetailPanel({ node, onClose }: Props) {
                 fontSize: 13,
               }}
             >
-              큽은행에서 보기
+              은행에서 보기
             </a>
           )}
         </>
