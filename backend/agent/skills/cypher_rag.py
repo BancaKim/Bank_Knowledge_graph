@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 DEPOSIT_SCHEMA = """\
-## 큽은행 금융상품 지식그래프 스키마 (예금)
+## 금융상품 지식그래프 스키마 (예금)
 
 ### 예금 상품 노드
 - (:Product {id, name, product_type, description, amount_max_raw, amount_max_won, eligibility_summary, page_url})
@@ -59,7 +59,7 @@ DEPOSIT_SCHEMA = """\
 """
 
 LOAN_SCHEMA = """\
-## 큽은행 금융상품 지식그래프 스키마 (대출)
+## 금융상품 지식그래프 스키마 (대출)
 
 ### 대출 상품 노드
 - (:LoanProduct {id, name, loan_type, description, amount_max_raw, eligibility_summary, rate_cut_request_available, contract_withdrawal_available, illegal_contract_termination})
@@ -406,7 +406,7 @@ def _format_results(results: list[dict], cypher: str) -> str:
 
 @tool
 def query_knowledge_graph(question: str, db=None, llm=None) -> str:
-    """자연어 질문을 Cypher 쿼리로 변환하여 큽은행 지식그래프를 검색합니다.
+    """자연어 질문을 Cypher 쿼리로 변환하여 금융상품 지식그래프를 검색합니다.
 
     복합 조건 검색, 다중 관계 탐색, 집계/비교/정렬 등 기존 검색 도구로
     처리하기 어려운 질문에 사용합니다.
