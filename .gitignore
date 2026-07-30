@@ -37,3 +37,8 @@ rag_storage/
 print-popup.png
 docs/
 .venv-mlx/
+
+# Scraper (private — not shared)
+scraper/
+*-pdf-scraper.skill
+skills/scrape-products.md

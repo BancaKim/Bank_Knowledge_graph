@@ -7,7 +7,6 @@
 - [backend/agent/skills/AGENTS.md](backend/agent/skills/AGENTS.md)
 - [backend/routers/AGENTS.md](backend/routers/AGENTS.md)
 - [knowledge_graph/AGENTS.md](knowledge_graph/AGENTS.md)
-- [scraper/AGENTS.md](scraper/AGENTS.md)
 - [frontend/AGENTS.md](frontend/AGENTS.md)
 - [frontend/src/AGENTS.md](frontend/src/AGENTS.md)
 - [frontend/src/components/AGENTS.md](frontend/src/components/AGENTS.md)

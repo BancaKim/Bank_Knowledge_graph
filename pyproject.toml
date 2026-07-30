@@ -25,18 +25,15 @@ chat = [
     "langchain-neo4j>=0.3,<0.6",
     "langgraph>=0.4,<2.0",
 ]
-scrape = [
-    "playwright>=1.40",
+graph = [
     "python-frontmatter>=1.0",
     "python-slugify>=8.0",
     "pyyaml>=6.0",
-    "PyMuPDF>=1.24",
 ]
 all = [
-    "banking-bot[chat,scrape]",
+    "banking-bot[chat,graph]",
 ]
 
 [project.scripts]
-scrape = "scraper.run_scraper:main"
 build-graph = "knowledge_graph.deposit_builder:main"
 serve = "backend.main:run"
